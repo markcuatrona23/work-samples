@@ -1,9 +1,19 @@
+USE [C56_Eleveight]
+GO
+
+/****** Object:  StoredProcedure [dbo].[EventRSVP_Insert]    Script Date: 2/1/2019 9:03:16 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
 -- =============================================
 -- Author:		Mark Cuatrona
 -- Create date: 07/19/2018
 -- Description:	Event RSVP Insert
 -- =============================================
-ALTER PROCEDURE [dbo].[EventRSVP_Insert]
+CREATE PROCEDURE [dbo].[EventRSVP_Insert]
 	-- Add the parameters for the stored procedure here
 	@UserBaseId int,
 	@EventId int,
@@ -15,7 +25,7 @@ ALTER PROCEDURE [dbo].[EventRSVP_Insert]
 
 AS
 BEGIN
-/*  Test Script
+/*
 GO
 
 DECLARE	@return_value int,
@@ -60,3 +70,5 @@ GO
 
 
 END
+GO
+
